@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Headlines from '../components/Headlines';
+import { Link } from 'react-router-dom';
 
 const Home = (props) => {
 
@@ -53,7 +54,7 @@ const handleNewsSearch =(e)=>{
                         <div className="card-body">
                             <h5 className="card-title text-truncate">{ele.title}</h5>
                             {/* <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-                            <a href="#" className="btn btn-primary">View full news</a>
+                            <Link to={ele.url} className="btn btn-primary">View full news</Link>
                         </div>
                     </div>
 
