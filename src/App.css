@@ -1,0 +1,13 @@
+
+
+/* .topHeadlines{
+    width: 300px;
+} */
+
+
+
+@media only screen and (max-width:768px){
+    .topHeadlines{
+        display: none;
+    }
+}
